@@ -1,0 +1,1223 @@
+@font-face {
+    font-family: digital;
+    src: url(/Haverj\W01\Regular.ttf);
+}
+
+@font-face {
+    font-family: centable;
+    src: url(/CENTB___.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+.page1 {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(130, 119, 139); */
+}
+
+.page1 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    height: 15%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.page1 header h1 {
+    font-size: 33px;
+    font-family: centable;
+    font-weight: 500;
+}
+
+.page1 header nav {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: centable;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    /* justify-content: center; */
+}
+
+.page1 header nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /* transition: all 4s ease; */
+    /* overflow: hidden; */
+
+}
+.page1 header nav a:hover::after{
+    left: 0px;
+    opacity: 1;
+    transition: all .4s ease;
+    /* overflow: auto; */
+}
+.page1 header nav a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    bottom: -3px;
+    left: -100px;
+    opacity: 0;
+    
+}
+
+header nav a:nth-last-child(1) {
+    position: relative;
+    padding: 6px 20px;
+    /* background-color: brown; */
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid black;
+    z-index: 99;
+}
+
+header nav a:nth-last-child(1) h5 {
+    z-index: 99;
+    position: relative;
+    font-weight: 100;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* background: #000; */
+
+}
+
+header nav a:nth-last-child(1) h5 .arrow {
+    height: 25px;
+    /* width: 10%; */
+}
+
+header nav a:nth-last-child(1) .green {
+    background-color: springgreen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    transition: left .8s ease;
+    z-index: 2;
+
+}
+
+header nav a:nth-last-child(1):hover .green {
+    left: 0%;
+}
+
+.page1 h2 {
+    margin-top: -60px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    font-family: centable;
+    position: relative;
+    width: 50%;
+    z-index: 98;
+}
+
+.page1 h2::after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-35%, 0%);
+}
+
+.page1 img {
+    transition: all .8s ease;
+    cursor: pointer;
+}
+
+.page1 .img1 {
+    position: absolute;
+    height: 65%;
+    top: 25%;
+    left: 5%;
+}
+
+.page1 .img2 {
+    position: absolute;
+    height: 35%;
+    width: 300px;
+    top: 23%;
+    right: 25%;
+    z-index: 7;
+}
+
+.page1 .img3 {
+    position: absolute;
+    height: 38%;
+    width: 250px;
+    bottom: 8%;
+    right: 8%;
+    z-index: 6;
+}
+
+.page1 img:hover {
+    margin-top: -20px;
+
+}
+
+.page1 .img3:hover {
+    margin-top: -20px;
+
+}
+
+.page1 p {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    gap: 10px;
+    position: absolute;
+    bottom: 18%;
+    left: 40%;
+    font-size: 24px;
+    font-family: centable;
+}
+
+.page1 p button {
+    overflow: hidden;
+    position: relative;
+    padding: -0px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.page1 p button .green2 {
+    transition: left .8s ease;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+}
+
+.page1 p button:hover .green2 {
+    left: 0%;
+}
+
+.page1 button .arrow2 {
+
+    z-index: 97;
+    height: 35px;
+    position: relative;
+}
+
+.page2 {
+    padding: .1px;
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+}
+
+.page2 .para {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-family: centable;
+}
+
+.page2 .para i {
+    color: springgreen;
+}
+
+.page2 h2 {
+    position: relative;
+    margin-left: 20%;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+    width: 60%;
+    font-size: 45px;
+    font-family: centable;
+    word-spacing: 5px;
+}
+
+.page2 h2::after {
+    content: "";
+    height: 75px;
+    width: 55%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    left: 36.5%;
+    bottom: -15px;
+}
+
+.page2 p {
+    margin-top: 80px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    gap: 20px;
+    font-weight: 500;
+    font-family: centable;
+}
+
+.page2 p button {
+    position: relative;
+    padding: 0px 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid rgb(240, 234, 234);
+    /* background-color: transparent; */
+
+
+}
+
+.page2 .arrow3 {
+
+    height: 30px;
+    z-index: 96;
+    position: relative;
+    /* mix-blend-mode: difference; */
+}
+
+.page2 p button .green3 {
+    transition: left .5s ease;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+.page2 p button:hover .green3 {
+    left: 0%;
+}
+
+.page3 {
+    display: flex;
+    padding: .1px;
+    height: 120%;
+    width: 100%;
+    /* background-color: rgb(146, 49, 236); */
+}
+
+.page-left {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(131, 67, 67); */
+}
+
+.page-left .img-1 {
+    height: 70%;
+    width: 70%;
+    margin-top: 33%;
+    margin-left: 30%;
+}
+
+
+
+.page-left .img-2 {
+    height: 250px;
+    width: 33%;
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+}
+
+.page-left .img-3 {
+    height: 500px;
+    /* width: 270px; */
+    position: absolute;
+    /* Positioning the element with class "img-3" on the page. It is placing it 45% from the bottom of its
+ parent container and 7% to the left of the left edge of its parent container. */
+    bottom: 42%;
+    left: -1%;
+
+}
+
+.page-left .img-4 {
+    position: absolute;
+    height: 200px;
+    top: 0%;
+    left: 30%;
+}
+
+.page3-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(141, 97, 97); */
+    padding: 80px;
+}
+
+.page3-right h2 {
+    margin-top: 140px;
+    font-size: 50px;
+    font-family: centable;
+}
+
+.page3-right h2 span {
+    position: relative;
+    /* color: red; */
+}
+
+.page3-right h2 span::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    left: 0%;
+    bottom: -25%;
+}
+
+
+.page3-right p {
+    font-size: 18px;
+    width: 90%;
+    margin-top: 30px;
+    font-family: gilroy;
+}
+
+.page3-right .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    height: 100px;
+    width: 500px;
+    /* background-color: blueviolet; */
+
+}
+
+.page3-right .bottom .circle {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(185, 178, 178);
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/team/Team-Transparent/Nouri-Messaoud-2.png?w=400&h=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1634030846&s=944b7a533ea72d26afc37cdf33752fd9);
+    border-radius: 50%;
+}
+
+.page3-right .bottom h5 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: gilroy;
+    letter-spacing: -1px;
+    margin-left: 15px;
+}
+
+.page3-right button {
+    position: relative;
+    margin-left: 40px;
+
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+
+}
+
+.page3-right button h6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 95;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.page3-right button h6 img {
+    height: 30px;
+    /* width: 20px; */
+}
+
+.page3-right button .green4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    top: 0%;
+    left: -100%;
+    transition: left .5s ease;
+    cursor: pointer;
+}
+
+.page3-right button:hover .green4 {
+    left: 0%;
+}
+
+.page4 {
+    padding: .1px;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(113, 91, 134); */
+}
+
+.page4 h1 {
+    margin-top: 50px;
+    margin-left: 22%;
+    text-align: center;
+    font-size: 44px;
+    width: 55%;
+    font-weight: 500;
+    font-family: centable;
+}
+
+.page4 h1 span {
+    position: relative;
+}
+
+.page4 h1 span::after {
+    content: "";
+    height: 120%;
+    width: 125%;
+    /* background-color: blueviolet; */
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    position: absolute;
+    left: -15px;
+    background-repeat: no-repeat;
+}
+
+.page4 .box {
+    display: flex;
+    gap: 25px;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 35px;
+    height: 70%;
+    width: 80%;
+    /* background-color: brown; */
+}
+
+.page4 .box1 {
+    position: relative;
+    height: 100%;
+    width: 19%;
+    /* background-color: blue; */
+}
+
+.page4 .box1 img {
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.page4 .box1 img:hover {
+    scale: 1.3;
+}
+
+.page4 .box1 .img1 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blanchedalmond; */
+    height: 20%;
+}
+
+.page4 .box1 .img1 img {
+    height: 45%;
+}
+
+.page4 .box1 .img2 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blanchedalmond; */
+    height: 20%;
+}
+
+.page4 .box1 .img2 img {
+    height: 45%;
+}
+
+.page4 .box1 .img3 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blanchedalmond; */
+    height: 20%;
+}
+
+.page4 .box1 .img3 img {
+    height: 45%;
+}
+
+.page5 {
+    position: relative;
+    padding: .1px;
+    height: 95%;
+    width: 100%;
+    /* background-color: rgb(135, 91, 177); */
+}
+
+.page5 .firstimg {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 46%;
+
+}
+
+.page5 .box {
+    position: absolute;
+    left: 8%;
+    bottom: 0px;
+    height: 350px;
+    width: 530px;
+    /* background-color: rgb(99, 68, 68); */
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=600);
+    transition: 2s;
+}
+
+.page5 .box:hover .box1cover {
+    background-color: transparent;
+
+}
+
+.page5 .box .box1cover {
+    transition: .2s;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.247);
+}
+
+.page5 .box .box1cover .coverimg {
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 50px;
+
+}
+
+.page5 .box .box1cover .container {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    /* background-color: brown; */
+    bottom: 0px;
+    padding: 15px;
+}
+
+.page5 .box .box1cover .container h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #fff;
+    width: 90%;
+    font-family: centable;
+}
+
+.page5 .box .box1cover .container h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page5 .box .box1cover .container h3 button {
+    border: 1px solid black;
+    padding: 0px 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+
+
+}
+
+.page5 .box .box1cover .container h3 button .green5 {
+    height: 100%;
+    background-color: springgreen;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition: left .4s ease;
+    cursor: pointer;
+
+
+}
+
+.page5 .box .box1cover .container h3 button:hover .green5 {
+    left: 0%;
+}
+
+.page5 .box .box1cover .container h3 button img {
+    position: relative;
+    height: 30px;
+    z-index: 94;
+    cursor: pointer;
+
+    /* margin-bottom: -20%; */
+}
+
+.page5 .box2 {
+    position: absolute;
+    right: 8%;
+    bottom: 0px;
+    height: 350px;
+    width: 530px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/54122/pexels-photo-54122.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.page5 .box2:hover .box1cover {
+    background-color: transparent;
+
+}
+
+.page5 .box2 .box1cover {
+    transition: .2s;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.247);
+}
+
+.page5 .box2 .box1cover .coverimg {
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 50px;
+
+}
+
+.page5 .box2 .box1cover .container {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    /* background-color: brown; */
+    bottom: 0px;
+    padding: 15px;
+}
+
+.page5 .box2 .box1cover .container h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #fff;
+    width: 95%;
+    font-family: centable;
+}
+
+.page5 .box2 .box1cover .container h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page5 .box2 .box1cover .container h3 button {
+
+    padding: 0px 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    border: 1px solid black;
+
+
+}
+
+.page5 .box2 .box1cover .container h3 button .green5 {
+    height: 100%;
+    background-color: springgreen;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition: left .4s ease;
+    cursor: pointer;
+
+
+}
+
+.page5 .box2 .box1cover .container h3 button:hover .green5 {
+    left: 0%;
+}
+
+.page5 .box2 .box1cover .container h3 button img {
+    position: relative;
+    height: 30px;
+    z-index: 94;
+
+    /* margin-bottom: -20%; */
+}
+
+.page6 {
+    position: relative;
+    padding: .1px;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(153, 102, 201); */
+}
+.para3{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #fff; */
+    margin-left: 40%;
+    margin-top: 60px;
+}
+.page6 .gola{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(207, 189, 224);
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/team/Team-Transparent/Demie-Loizou-1.png?w=400&h=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638459673&s=d95f4d84ca3dc1bf7c15f06aed800740);
+    background-size: cover;
+}
+
+.page6 .para3 p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: gilroy;
+}
+.page6 .para3 button{
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid gray;
+    overflow: hidden;
+    background-color: rgb(241, 238, 238);
+
+}
+.page6 .para3 button .green6{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    transition:left .4s ease;
+}
+.page6 .para3 button:hover .green6{
+    left: 0%;
+}
+.page6 .para3 button img{
+    position: relative;
+    z-index: 94;
+    height: 30px;
+    cursor: pointer;
+}
+
+.page6 .scroller {
+    position: relative;
+    margin-top: 50px;
+    padding: .1px;
+    /* background-color: rgb(22, 22, 22); */
+    height: 75%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+   
+
+
+}
+
+.page6 .scroller .container {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    animation: move 4s infinite  linear;
+  
+    /* background-color: blue; */
+}
+
+.page6 .scroller .container img {
+    height: 80px;
+    margin-top: 30px;
+}
+
+.page6 .scroller .container h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: centable;
+    margin-top: 35px;
+}
+
+.page6 .scroller .container h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.page6 .scroller .container h3 i {
+    color: springgreen;
+}
+
+.page6 .scroller .container p {
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-top: 1px;
+    margin-left: 15px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 4px));
+    }
+
+}
+.page6 .icons2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    font-size: 13px;
+    gap: 10px;
+    color: rgb(163, 162, 162);
+}
+.page6 .icons2 i:nth-child(2){
+    color: springgreen;
+}
+.white{
+    height: 60%;
+    width: 100%;
+    /* background-color: blue; */
+}
+.footer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.container2{
+    text-align: center;
+    position: absolute;
+    top: -30%;
+    left: 16%;
+    height: 350px;
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1685630247164-e88027790894?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    /* background-color: rgb(156, 41, 41); */
+}
+.container2 h1{
+    margin-top: 60px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: centable;
+    color: #fff;
+    /* width: 50%; */
+}
+.container2 h1 span{
+    position: relative;
+}
+.container2 h1 span::after{
+    content: "";
+    height: 10px;
+    width: 100%;
+     /* background-color: rgb(149, 12, 240); */
+     
+     background-repeat: no-repeat;
+     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+}
+.para3 {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #fff; */
+    margin-left: 40%;
+    margin-top: 60px;
+}
+
+.footer .gola {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(207, 189, 224);
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/team/Team-Transparent/Demie-Loizou-1.png?w=400&h=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638459673&s=d95f4d84ca3dc1bf7c15f06aed800740);
+    background-size: cover;
+}
+
+.footer .para3 p {
+    font-size: 21px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    color: #fff;
+}
+
+.footer  .para3 button {
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid gray;
+    overflow: hidden;
+    background-color: rgb(241, 238, 238);
+
+}
+
+ .footer .para3 button .green6 {
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    transition: left .4s ease;
+}
+
+.footer .para3 button:hover .green6 {
+    left: 0%;
+}
+
+ .footer .para3 button img {
+    position: relative;
+    z-index: 94;
+    height: 30px;
+    cursor: pointer;
+}
+.footer footer{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    height: 430px;
+    width: 85%;
+    left: 8%;
+    /* background-color: rgb(103, 95, 110); */
+}
+footer .box1{
+    height: 80%;
+    width: 30%;
+    /* background-color: blueviolet; */
+}
+
+footer .box1 h1 {
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: centable;
+    color: #fff;
+    /* width: 50%; */
+}
+
+footer .box1 h1 span {
+    position: relative;
+}
+
+footer .box1 h1 span::after {
+    content: "";
+    height: 95px;
+    width: 100%;
+    /* background-color: rgb(149, 12, 240);
+     */
+    background-repeat: no-repeat;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    position: absolute;
+    bottom: -35px;
+    left: -5px;
+}
+
+ .para4 {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: #fff; */
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+footer .gola {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(207, 189, 224);
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/team/Team-Transparent/Demie-Loizou-1.png?w=400&h=400&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1638459673&s=d95f4d84ca3dc1bf7c15f06aed800740);
+    background-size: cover;
+}
+
+footer .para4 p {
+    font-size: 21px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    color: #fff;
+}
+
+footer .para4 button {
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid gray;
+    overflow: hidden;
+    background-color: rgb(241, 238, 238);
+
+}
+
+footer .para4 button .green6 {
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    transition: left .4s ease;
+}
+
+footer .para4 button:hover .green6 {
+    left: 0%;
+}
+
+footer .para4 button img {
+    position: relative;
+    z-index: 94;
+    height: 30px;
+    cursor: pointer;
+}
+footer .box2{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 15%;
+    /* background-color: aqua; */
+    align-items: start;
+}
+footer .box2 h2{
+    margin-top: 50px;
+    font-size: 25px ;
+    font-family: gilroy;
+    color: #fff;
+    font-weight: bold;
+}
+footer .box2 p{
+    position: relative;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: gilroy;
+    color: #fff;
+    cursor: pointer;
+    
+
+}
+
+footer .box2 p::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    bottom: -1.5%;
+    left: 0px;
+    opacity: 0;
+    transition: .4s;
+}
+footer .box2 p:hover::after {
+    opacity: 1;
+    
+}
+footer .box3 {
+    /* text-align: center; */
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    height: 80%;
+    width: 15%;
+    /* background-color: aqua; */
+}
+footer .box3 img{
+    height: 85px;
+    width: 150px;
+}
+footer .box3 img:nth-last-child(1) {
+    height: 45px;
+    width: 150px;
+}
+footer .bottom2{
+    color: #fff;
+    /* color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    /* background-color: chocolate; */
+    border-top:1.5px solid gray ;
+
+}
+footer .bottom2 h1{
+    
+    font-size:26px ;
+    font-family: centable;
+}
+footer .bottom2 .para5{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+footer .bottom2 .para5 p{
+    font-size: 14px;
+    color: #fff;
+    font-family: gilroy;
+}
+footer .bottom2 .para5 i{
+    font-size: 20px;
+}
